@@ -1,24 +1,25 @@
 body {
+    /* Font Family */
+    font-family: Roboto, sans-serif;
+    /* Flexbox */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: Roboto, sans-serif;
+    /* Extend background color */
+    min-width: 100%;
+    /* Remove all margin + padding for more control*/
     margin: 0px;
+    padding: 0px;
 }
 
 /* HEADER */
 
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #1F2937;
-    width: 100vw;
-    /*  */
-    padding: 16px;
-    padding-left: 16px;
-    
+    box-shadow: 1000px 0px #1F2937;
+    padding: 1rem 16dvw;
 }
 
 .header-left {
@@ -36,23 +37,20 @@ body {
 .hero {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
     background-color: #1F2937;
-    background-size: 100% 100%;
-    /* width: 100vw; */
     color: white;
     gap: 48px;
     /*  */
-    padding: 72px 0px;
-    min-width: 100%;
+    padding: 6rem 16dvw;
 }
 
 .hero-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 400px;
-    gap: 8px;
+    width: 50%;
+    max-width: 450px;
+    gap: 16px;
 }
 
 .hero-heading {
@@ -69,12 +67,13 @@ body {
 }
 
 .hero img {
-    width: 360px;
+    width: 400px;
     height: auto;
 }
 
 .hero button {
     color: #F9FAF8;
+    font-weight: bold;
     border: none;
     border-radius: 8px;
     background: #3882F6;
@@ -90,6 +89,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /*  */
+    padding: 3rem 16% 8rem 16%;
 }
 
 .info-heading {
@@ -97,7 +98,6 @@ body {
     font-weight: bolder;
     color: #1F2937;
     margin: 0px;
-    padding-top: 36px;
     padding-bottom: 36px;
 }
 
@@ -106,8 +106,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 18px;
-    /*  */
-    padding-bottom: 108px;
+    max-width: 800px;
 }
 
 .card {
@@ -116,7 +115,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 150px;
+    /* width: 150px; */
 }
 
 .card img {
@@ -140,12 +139,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 600px;
     background-color: #E5E7EB;
     /*  */
-    padding-top: 64px;
-    padding-bottom: 64px;
-    min-width: 100%;
+    padding: 8rem 16%;
 }
 
 .quote-content {
@@ -153,37 +149,43 @@ body {
     font-style: italic;
     font-weight: lighter;
     color: #1F2937;
-    width: 830px;
+    width: 55dvw;
+    padding-bottom: 16px;
     margin: 0px;
+    max-width: 800px;
 }
 
 .quote-source {
-    width: 800px;
-    text-align: end;
     font-size: 18px;
     font-weight: bolder;
-    margin: 0px;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
     padding-right: 36px;
+    max-width: 800px;
 }
 
 /* SIGN-UP */
 
 .signup-outer {
-    padding-top: 72px;
-    padding-bottom: 72px;
+    /* padding-top: 72px;
+    padding-bottom: 72px; */
+    padding: 4rem 16%;
+    display: flex;
+    justify-content: center;
 }
 
 .signup {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 128px;
     color: #F9FAF8;
     border: none;
     border-radius: 8px;
     background: #3882F6;
-    /* Forgot this! Add some padding to the button itself */
-    width: 720px;
     padding: 36px 96px;
+    max-width: 800px;
 }
 
 .signup p {
@@ -202,9 +204,16 @@ body {
     background: none;
     border-radius: 8px;
     /* Forgot this! Add some padding to the button itself */
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 8px 16px;
 }
+
+/* color: #F9FAF8;
+font-weight: bold;
+border: none;
+border-radius: 8px;
+background: #3882F6;
+padding: 8px 16px;
+width: 96px; */
 
 /* FOOTER */
 
@@ -214,8 +223,10 @@ body {
     align-items: center;
     background-color: #1F2937;
     color: #E5E7EB;
-    height: 72px;
-    min-width: 100%;
+    /* height: 72px; */
+    /* min-width: 100%; */
+    padding: 2rem 16%;
+
 }
 
 /* text styling */
