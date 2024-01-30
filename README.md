@@ -1,2 +1,2 @@
-# top-landing-page
-The Odin Project - Landing Page
+# The Odin Project - Practice Landing Page
+A learning project done as a part of The Odin Project.
